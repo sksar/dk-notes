@@ -1,4 +1,5 @@
 .
+./run.sh
 ./README.md
 ./C
 ./C/c two marks.docx
