@@ -23,7 +23,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run Script
         run: |
-              find -print > files.txt
+              find . -not -path '*/\.*' > files.txt
               git config --global user.name '${{ github.actor }}'
               git config --global user.email '${{ github.actor }}@users.noreply.github.com'
               git commit -am "Automated Changes"
