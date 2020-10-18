@@ -24,8 +24,7 @@ jobs:
       - name: Run Script
         run: |
               find . -not -path '*/\.*' > files.txt
-              chmod +x ./run.sh
-              ./run.sh > files.json
+              sh ./run.sh > files.json
               git config --global user.name '${{ github.actor }}'
               git config --global user.email '${{ github.actor }}@users.noreply.github.com'
               git commit -am "Automated Changes"
