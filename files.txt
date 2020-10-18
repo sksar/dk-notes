@@ -1,0 +1,153 @@
+.
+./README.md
+./C
+./C/c two marks.docx
+./C/c theory bschons part II.pdf
+./Operating System
+./Operating System/operating system hons.pdf
+./.github
+./.github/workflows
+./.github/workflows/main.yml
+./Automata
+./Automata/Automata Complete notes.pdf
+./Automata/automata.pdf
+./Algorithms
+./Algorithms/algorithm b.tech 5th sem.pdf
+./Algorithms/algorithm for 1st year hons.pdf
+./Graphics
+./Graphics/GRAPHICS NOTES print.pdf
+./.git
+./.git/refs
+./.git/refs/tags
+./.git/refs/remotes
+./.git/refs/remotes/origin
+./.git/refs/remotes/origin/master
+./.git/refs/heads
+./.git/refs/heads/master
+./.git/description
+./.git/HEAD
+./.git/FETCH_HEAD
+./.git/info
+./.git/info/exclude
+./.git/index
+./.git/shallow
+./.git/hooks
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/update.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/post-update.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/logs
+./.git/logs/refs
+./.git/logs/refs/remotes
+./.git/logs/refs/remotes/origin
+./.git/logs/refs/remotes/origin/master
+./.git/logs/refs/heads
+./.git/logs/refs/heads/master
+./.git/logs/HEAD
+./.git/branches
+./.git/config
+./.git/objects
+./.git/objects/e7
+./.git/objects/e7/6752713105370775ff1a11b3513f97c24e0b1e
+./.git/objects/59
+./.git/objects/59/5df0516573151a9a365269cd9c6db0ad9946da
+./.git/objects/c4
+./.git/objects/c4/45eddfa5c99e0fa67afd7c1350453946afb4d3
+./.git/objects/fa
+./.git/objects/fa/4047cca83c4b456f89562e8219553fa53223b0
+./.git/objects/7d
+./.git/objects/7d/88325afd9eea32f6553b6e9b4d3115d5155c4b
+./.git/objects/4f
+./.git/objects/4f/c846a907b99681d5d2444c4564ad7d22f75413
+./.git/objects/fd
+./.git/objects/fd/a623f8ab8fac9a13b611ad387339ae8acad55f
+./.git/objects/6f
+./.git/objects/6f/e14405999df9da89e3b730a47f4d23dbba56fc
+./.git/objects/87
+./.git/objects/87/49ae4e4f2e126d7e260ba73e8c9d818a62bf8f
+./.git/objects/9b
+./.git/objects/9b/ea4330f055c418ce73df7a354fd5c29ead0631
+./.git/objects/4d
+./.git/objects/4d/7c1a2e98fa7706caf3f57c83bc4883f8343035
+./.git/objects/06
+./.git/objects/06/505480afa54dbae04b49063b9496339d754c3b
+./.git/objects/7f
+./.git/objects/7f/846afb57ce1b558ad8581c8388fe102457d53c
+./.git/objects/7e
+./.git/objects/7e/f73fe11f47e19cec1ca9e776b64652a4891bbb
+./.git/objects/7e/72663006fe14825e1c6d77fce26da586425140
+./.git/objects/d2
+./.git/objects/d2/fb79722268fa2245dcc3022ca924556ea5b3ff
+./.git/objects/1c
+./.git/objects/1c/7aa541104d69b56598e5b30952125479a02d2a
+./.git/objects/c8
+./.git/objects/c8/c2b9cb61e3bc5e3f17e7d5d779db6313dbebf2
+./.git/objects/c8/1686d7a270919501f51a138a356178a464d9fa
+./.git/objects/57
+./.git/objects/57/1327e12f4e6f478a578cbbfebd5553c1d4c5c5
+./.git/objects/info
+./.git/objects/41
+./.git/objects/41/cb3f4a0d8b91563c3e6262d42f1a47d99a12d6
+./.git/objects/d5
+./.git/objects/d5/1415153852176edcc1c62262e3284676127153
+./.git/objects/94
+./.git/objects/94/39c20ddb07847b0d3b7ef80f1417e214a9faa1
+./.git/objects/af
+./.git/objects/af/bfeb5b041cd20af56a7a62e0a93798b4c61227
+./.git/objects/15
+./.git/objects/15/0a91e4a834c37a8a4f2289cbdfd81a05a511d2
+./.git/objects/ed
+./.git/objects/ed/a1da844c4f96aa997ada20fdf8d60e55ccb72a
+./.git/objects/1d
+./.git/objects/1d/9a61de68b6b8151dd425252f07019944a5f93e
+./.git/objects/b2
+./.git/objects/b2/e367837f36240fb3496c653cd156ee6ec58dcb
+./.git/objects/ec
+./.git/objects/ec/00697d6832268ee806280b1f34f55239c3ba57
+./.git/objects/05
+./.git/objects/05/dc8ff0ab3210bc9d8b994e109c871966226447
+./.git/objects/3b
+./.git/objects/3b/7507461c67459953b2ed1bcf4a77b5df9fd308
+./.git/objects/d8
+./.git/objects/d8/84b97243f89e3292b0cdf47f7acb6247985b72
+./.git/objects/6c
+./.git/objects/6c/d3bd79e0ae2c6dc628cc0b017028ce7dfffbbd
+./.git/objects/pack
+./.git/objects/3e
+./.git/objects/3e/bcda0cacf35fc89a4ccc02f3c2a7cc9953313d
+./.git/objects/83
+./.git/objects/83/91ff6adb1d0da213a85dbca75eb6729ccf1963
+./.git/objects/47
+./.git/objects/47/0a0b65e3af1c6c185a256e5695a671be1d76a5
+./.git/objects/f6
+./.git/objects/f6/947cf6ba62d9ff88083eb5fe5713bea50938db
+./.git/objects/68
+./.git/objects/68/d8ff7c5c9ff3ba5fccd5b8f27094b80e22fece
+./DBMS
+./DBMS/SQL_Queries.pdf
+./DBMS/dbms notes.pdf
+./DBMS/Normalization.pdf
+./DBMS/viva SQL.docx
+./DBMS/dbms extra genaral bsc part 2.pdf
+./C++
+./C++/c++ for viva.pdf
+./C++/c++ notes.pdf
+./files.txt
+./.gitignore
+./Data Structure
+./Data Structure/Hash Table.pdf
+./Fundamentals
+./Fundamentals/Fundamentals Notes.pdf
+./Networking
+./Networking/Networking 3rd Year Extra.pdf
+./Graph Theory
+./Graph Theory/Graph-Theory-notes.pdf
+./Graph Theory/graph theory bsc hons.pdf
