@@ -27,6 +27,7 @@ jobs:
               sh ./run.sh > files.json
               git config --global user.name '${{ github.actor }}'
               git config --global user.email '${{ github.actor }}@users.noreply.github.com'
+              git add -A
               git commit -am "Automated Changes"
               git push
       
