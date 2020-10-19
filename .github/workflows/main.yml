@@ -29,5 +29,3 @@ jobs:
               git add -A
               git commit -am "Automated Changes"
               git push
-      
-        
