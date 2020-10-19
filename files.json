@@ -25,6 +25,7 @@
 	"./C++/c++ for viva.pdf",
 	"./C++/c++ notes.pdf",
 	"./files.json",
+	"./last-update-date.txt",
 	"./Data Structure",
 	"./Data Structure/Hash Table.pdf",
 	"./Fundamentals",
@@ -34,4 +35,4 @@
 	"./Graph Theory",
 	"./Graph Theory/Graph-Theory-notes.pdf",
 	"./Graph Theory/graph theory bsc hons.pdf",
-]}
+""]}
