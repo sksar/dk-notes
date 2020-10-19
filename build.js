@@ -4,17 +4,27 @@ const fs = require('fs');
 const LIST = {};
 
 function list(dir) {
+
     let _files = [];
+
     fs.readdirSync(dir).forEach(file => {
+
         if (file.substr(0, 1) != '.') {
+
             let path = dir + file;
-            let isDirectory = fs.lstatSync(path + '/').isDirectory();
-            let isFile = fs.lstatSync(path).isFile();
+            let stat = fs.lstatSync(path);
+
+            let isDirectory = stat.isDirectory();
+            let isFile = stat.isFile();
+
             if ((isFile || isDirectory))
                 _files.push({ file, type: isDirectory ? 'dir' : 'file', ext: isFile ? file.split('.').pop() : '' });
-            if (isDirectory) list(dir + file + '/');
+            if (isDirectory) list(path + '/');
+
         }
+
     });
+
     LIST[dir.substr(1)] = _files;
 }
 
