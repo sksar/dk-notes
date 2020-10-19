@@ -19,11 +19,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
 
       # Runs a single command using the runners shell
       - name: Run Script
         run: |
-              sh ./run.sh > files.json
+              node build.js
               date > last-update-date.txt
               git config --global user.name '${{ github.actor }}'
               git config --global user.email '${{ github.actor }}@users.noreply.github.com'
