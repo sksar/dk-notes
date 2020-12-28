@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const LIST = [];
+const LIST = {};
 
 function list(dir) {
 
