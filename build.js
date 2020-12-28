@@ -1,7 +1,6 @@
-const { FILE } = require('dns');
 const fs = require('fs');
 
-const LIST = {};
+const LIST = [];
 
 function list(dir) {
 
@@ -19,6 +18,7 @@ function list(dir) {
 
             if ((isFile || isDirectory))
                 _files.push({ file, type: isDirectory ? 'dir' : 'file', ext: isFile ? file.split('.').pop() : '' });
+            
             if (isDirectory) list(path + '/');
 
         }
