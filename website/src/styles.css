@@ -1,0 +1,53 @@
+@import url('https://unpkg.com/carbon-components-svelte@0.42.2/css/g10.css');
+
+/* Align */
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Container */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bx--breadcrumb a {
+    text-decoration: underline;
+}
+
+/* Files & Folders */
+
+.list .bx--tile {
+    min-height: 0;
+}
+
+.folder,
+.file {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.folder h5,
+.file h5 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.file h5 {
+    font-weight: 400;
+}

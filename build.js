@@ -4,31 +4,25 @@ const LIST = {}; // DO NOT CHANGE TO ARRAY
 
 function list(dir) {
 
-    let _files = [];
+    const files = [];
+    const dirs = [];
 
     fs.readdirSync(dir).forEach(file => {
 
-        if (file.substr(0, 1) != '.') {
+        const path = dir + file;
+        const stat = fs.lstatSync(path);
 
-            let path = dir + file;
-            let stat = fs.lstatSync(path);
-
-            let isDirectory = stat.isDirectory();
-            let isFile = stat.isFile();
-
-            if ((isFile || isDirectory))
-                _files.push({ file, type: isDirectory ? 'dir' : 'file', ext: isFile ? file.split('.').pop() : '' });
-            
-            if (isDirectory) list(path + '/');
-
+        if (stat.isFile()) files.push(file);
+        else if (stat.isDirectory()) {
+            dirs.push(file);
+            list(path + '/')
         }
 
     });
 
-    LIST[dir.substr(1)] = _files;
+    LIST[dir.substr(1)] = { files, dirs };
 }
 
-list('./');
+list('./FILES/');
 
-LIST['/'] = LIST['/'].filter(f => f.type == 'dir');
-fs.writeFileSync('files.json', JSON.stringify(LIST));
+fs.writeFileSync('website/src/files.js', `module.exports = ${JSON.stringify(LIST, null, 2)}`);
