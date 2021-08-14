@@ -1,4 +1,24 @@
-@import url('https://unpkg.com/carbon-components-svelte@0.42.2/css/g10.css');
+@import url('https://api.fontshare.com/css?f[]=satoshi@500,700,900');
+@import url('https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.min.css');
+
+html,
+body {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-weight: 900;
+    margin: 1rem;
+}
 
 /* Align */
 
@@ -26,7 +46,9 @@ a {
 }
 
 .crumbs {
-    margin: 1rem 0;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    font-size: 15px;
 }
 
 .crumbs span b {
@@ -41,24 +63,19 @@ a {
 
 /* Files & Folders */
 
-.list .bx--tile {
-    min-height: 0;
-}
-
 .folder,
 .file {
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
     cursor: pointer;
 }
 
-.folder h5,
-.file h5 {
+.folder {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.file h5 {
+.file {
     font-weight: 400;
 }

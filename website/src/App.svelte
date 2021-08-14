@@ -13,8 +13,8 @@
     }
 </script>
 
+<h1 class="center">DK Notes</h1>
 <div class="container">
-    <h1 class="center">DK Notes</h1>
     <div class="crumbs">
         {#each crumb(PATH) as { path, text }}
             <span on:click={() => (PATH = path)}><b>{text}</b></span>
