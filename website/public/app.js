@@ -1002,7 +1002,7 @@ var app = (function () {
     		c: function create() {
     			h5 = element("h5");
     			t = text(t_value);
-    			add_location(h5, file$1, 19, 24, 555);
+    			add_location(h5, file$1, 19, 24, 564);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -1050,7 +1050,7 @@ var app = (function () {
     			a = element("a");
     			create_component(tile.$$.fragment);
     			t = space();
-    			attr_dev(a, "href", a_href_value = /*path*/ ctx[0] + /*file*/ ctx[3]);
+    			attr_dev(a, "href", a_href_value = /*path*/ ctx[0].split(1) + /*file*/ ctx[3]);
     			attr_dev(a, "target", "_blank");
     			add_location(a, file$1, 17, 16, 465);
     			attr_dev(div, "class", "file");
@@ -1072,7 +1072,7 @@ var app = (function () {
 
     			tile.$set(tile_changes);
 
-    			if (!current || dirty & /*path, list*/ 3 && a_href_value !== (a_href_value = /*path*/ ctx[0] + /*file*/ ctx[3])) {
+    			if (!current || dirty & /*path, list*/ 3 && a_href_value !== (a_href_value = /*path*/ ctx[0].split(1) + /*file*/ ctx[3])) {
     				attr_dev(a, "href", a_href_value);
     			}
     		},

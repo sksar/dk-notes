@@ -15,7 +15,7 @@
         {/each}
         {#each list.files as file}
             <div class="file">
-                <a href={path + file} target="_blank">
+                <a href={path.split(1) + file} target="_blank">
                     <Tile>
                         <h5>{file}</h5>
                     </Tile>
