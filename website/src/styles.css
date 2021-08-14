@@ -25,8 +25,18 @@ a {
     color: inherit;
 }
 
-.bx--breadcrumb a {
+.crumbs {
+    margin: 1rem 0;
+}
+
+.crumbs span b {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.crumbs span:after {
+    margin: 0 .5rem;
+    content: "/";
 }
 
 /* Files & Folders */
@@ -39,6 +49,7 @@ a {
 .file {
     text-transform: capitalize;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .folder h5,
