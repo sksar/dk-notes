@@ -12,7 +12,7 @@
         {/each}
         {#each list.files as file}
             <div class="file">
-                <a href={path.substr(1) + file} target="_blank">
+                <a href={path.substr(1) + file} target="_blank" download>
                     {file}
                 </a>
             </div>
