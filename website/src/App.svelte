@@ -13,7 +13,7 @@
     }
 </script>
 
-<h1 class="center">DK Notes</h1>
+<h1>DK Notes</h1>
 <div class="container">
     <div class="crumbs">
         {#each crumb(PATH) as { path, text }}

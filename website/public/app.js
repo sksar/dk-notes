@@ -866,8 +866,8 @@ var app = (function () {
     			span = element("span");
     			b = element("b");
     			t = text(t_value);
-    			add_location(b, file, 19, 49, 498);
-    			add_location(span, file, 19, 12, 461);
+    			add_location(b, file, 19, 49, 483);
+    			add_location(span, file, 19, 12, 446);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -945,12 +945,11 @@ var app = (function () {
 
     			t2 = space();
     			create_component(list.$$.fragment);
-    			attr_dev(h1, "class", "center");
     			add_location(h1, file, 15, 0, 321);
     			attr_dev(div0, "class", "crumbs");
-    			add_location(div0, file, 17, 4, 382);
+    			add_location(div0, file, 17, 4, 367);
     			attr_dev(div1, "class", "container");
-    			add_location(div1, file, 16, 0, 354);
+    			add_location(div1, file, 16, 0, 339);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

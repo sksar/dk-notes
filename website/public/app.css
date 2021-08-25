@@ -13,21 +13,19 @@ body {
 *:before,
 *:after {
     box-sizing: inherit;
+    user-select: none;
 }
 
 h1 {
-    font-weight: 900;
-    margin: 1rem;
-}
-
-/* Align */
-
-.center {
+    font-size: 1.5rem;
     text-align: center;
-}
-
-.right {
-    text-align: right;
+    font-weight: 900;
+    margin: 0;
+    padding: 0.3rem;
+    border-bottom: 1px solid #444;
+    position: fixed;
+    width: 100%;
+    background: #fff;
 }
 
 /* Container */
@@ -36,6 +34,7 @@ h1 {
     max-width: 800px;
     margin: auto;
     padding: 1rem;
+    padding-top: 4rem;
 }
 
 /* Links */
@@ -47,7 +46,7 @@ a {
 
 .crumbs {
     text-transform: capitalize;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
     font-size: 15px;
 }
 
@@ -63,12 +62,18 @@ a {
 
 /* Files & Folders list */
 
+.list {
+    overflow-x: hidden;
+}
+
+
 .item {
     text-transform: capitalize;
     cursor: pointer;
     display: flex;
     align-items: center;
     padding: 0.5rem 0;
+    transition: all 0.1s ease-in-out;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
