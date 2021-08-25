@@ -3,19 +3,22 @@
     export let list;
 </script>
 
-{#if list}
-    <div class="list">
+<div class="list">
+    {#if list}
         {#each list.dirs as dir}
-            <div class="folder" on:click={() => (path += dir + "/")}>
-                {dir}<span>⟶</span>
+            <div class="item" on:click={() => (path += dir + "/")}>
+                {dir}
             </div>
         {/each}
+        <div class="item">JavaScript</div>
+        <div class="item">HTML</div>
+        <div class="item">CSS</div>
         {#each list.files as file}
-            <div class="file">
+            <div class="item file">
                 <a href={path.substr(1) + file} target="_blank" download={file}>
                     {file}
                 </a>
             </div>
         {/each}
-    </div>
-{/if}
+    {/if}
+</div>
