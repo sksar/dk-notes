@@ -10,9 +10,6 @@
                 {dir}
             </div>
         {/each}
-        <div class="item">JavaScript</div>
-        <div class="item">HTML</div>
-        <div class="item">CSS</div>
         {#each list.files as file}
             <div class="item file">
                 <a href={path.substr(1) + file} target="_blank" download={file}>
