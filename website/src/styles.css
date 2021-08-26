@@ -1,96 +1,30 @@
-@import url('https://api.fontshare.com/css?f[]=satoshi@500,700,900');
-@import url('https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.min.css');
+@import url('https://unpkg.com/carbon-components-svelte/css/g10.css');
 
-html,
-body {
-    font-family: 'Satoshi', sans-serif;
-    font-size: 18px;
-    box-sizing: border-box;
-    font-weight: 500;
+* {
+    user-select: none !important;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    user-select: none;
+.bx--content {
+    min-height: 100vh;
 }
-
-h1 {
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 900;
-    margin: 0;
-    padding: 0.3rem;
-    border-bottom: 1px solid #444;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-}
-
-/* Container */
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 1rem;
-    padding-top: 4rem;
-}
-
-/* Links */
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.crumbs {
-    text-transform: capitalize;
-    margin-bottom: 0.4rem;
-    font-size: 15px;
-}
-
-.crumbs span b {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.crumbs span:after {
-    margin: 0 0.5rem;
-    content: "/";
-}
-
-/* Files & Folders list */
 
 .list {
-    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
-
-.item {
+.list .bx--tile {
     text-transform: capitalize;
-    cursor: pointer;
+    min-height: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.375;
     display: flex;
     align-items: center;
-    padding: 0.5rem 0;
-    transition: all 0.1s ease-in-out;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* border: 1px solid #c7c7c8; */
 }
 
-.item::before {
-    --size: 2rem;
-    width: var(--size);
-    height: var(--size);
-    content: "";
-    display: inline-block;
+.bx--tile svg {
     margin-right: 1rem;
-    background-image: url('folder.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.item.file::before {
-    background-image: url('file.svg');
-    transform: scale(0.9);
 }

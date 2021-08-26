@@ -1,21 +1,30 @@
 <script>
+    import { ClickableTile } from "carbon-components-svelte";
+    import Folder24 from "carbon-icons-svelte/lib/Folder24";
+    import Document24 from "carbon-icons-svelte/lib/Document24";
     export let path;
     export let list;
 </script>
 
-<div class="list">
-    {#if list}
+<br />
+{#if list}
+    <div class="list">
+        <!-- FOLDERS -->
         {#each list.dirs as dir}
-            <div class="item" on:click={() => (path += dir + "/")}>
-                {dir}
-            </div>
+            <ClickableTile on:click={() => (path += dir + "/")}>
+                <Folder24 />{dir}
+            </ClickableTile>
+            <!--  -->
         {/each}
+        <!-- FILES -->
         {#each list.files as file}
-            <div class="item file">
-                <a href={path.substr(1) + file} target="_blank" download={file}>
-                    {file}
-                </a>
-            </div>
+            <ClickableTile
+                href={path.substr(1) + file}
+                target="_blank"
+                download
+            >
+                <Document24 />{file}
+            </ClickableTile>
         {/each}
-    {/if}
-</div>
+    </div>
+{/if}

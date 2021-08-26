@@ -1,4 +1,11 @@
 <script>
+    import {
+        Header,
+        Content,
+        Breadcrumb,
+        BreadcrumbItem,
+    } from "carbon-components-svelte";
+
     import List from "./List.svelte";
     import AllFiles from "./files";
 
@@ -13,12 +20,14 @@
     }
 </script>
 
-<h1>DK Notes</h1>
-<div class="container">
-    <div class="crumbs">
+<Header platformName="DK Notes" />
+<Content>
+    <Breadcrumb>
         {#each crumb(PATH) as { path, text }}
-            <span on:click={() => (PATH = path)}><b>{text}</b></span>
+            <BreadcrumbItem href="#" on:click={() => (PATH = path)}>
+                {text}
+            </BreadcrumbItem>
         {/each}
-    </div>
+    </Breadcrumb>
     <List list={AllFiles[PATH]} bind:path={PATH} />
-</div>
+</Content>
